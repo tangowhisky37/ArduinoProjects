@@ -62,7 +62,8 @@ Display Simple Web Page (ArduinoProjects/Ethernet/DummyWebPage)
   - Dupont Male to Male wires
   - Dupont Female to Male wires
 - Software required includes :
-  - Arduino Development IDE : https://github.com/jcw/ethercard/
+  - Arduino Development IDE 
+  - Ethernet Library to be downloaded from https://github.com/jcw/ethercard/
 - Articles to read :
   - https://www.youtube.com/watch?v=ahvCyhgXaqc
   - http://en.code-bude.net/2013/06/22/how-to-use-enc28j60-ethernet-shield-with-arduino-mega-2560/ 
@@ -85,7 +86,8 @@ Obtain DHCP lease with DNS and accept Web Requests (ArduinoProjects/Ethernet/Eth
   - Dupont Male to Male wires
   - Dupont Female to Male wires
 - Software required includes :
-  - Arduino Development IDE : https://github.com/jcw/ethercard/
+  - Arduino Development IDE 
+  - Ethernet Library to be downloaded from https://github.com/jcw/ethercard/
 - Articles to read :
   - https://www.youtube.com/watch?v=ahvCyhgXaqc
   - http://en.code-bude.net/2013/06/22/how-to-use-enc28j60-ethernet-shield-with-arduino-mega-2560/ 
@@ -122,7 +124,8 @@ Obtain data from sensors and display on Web Page (ArduinoProjects/Ethernet/WebPa
   - Analog LDR or Light Dependant Resistor Sensor (LDR)
   - Analog Soil Moisture Sensor
 - Software required includes :
-  - Arduino Development IDE : https://github.com/jcw/ethercard/
+  - Arduino Development IDE 
+  - Ethernet Library to be downloaded from https://github.com/jcw/ethercard/
 - Articles to read :
   - https://www.youtube.com/watch?v=ahvCyhgXaqc
   - http://en.code-bude.net/2013/06/22/how-to-use-enc28j60-ethernet-shield-with-arduino-mega-2560/
