@@ -18,6 +18,10 @@ Simple Blink LED's
   - 50 Ohm Resistors 
 - Software required includes : 
   - Arduino Development IDE
+  - Links to read up on with regards to programming the Arduino from the Raspberry Pi
+    - http://www.instructables.com/id/Program-arduino-from-raspberry-pi/
+    - https://www.youtube.com/watch?v=mfIacE-SPvg
+    - https://www.youtube.com/watch?v=eYu4vHDxA3I 
 
 Blink LED's while reading data from Analog Sensors
 - This program simply blinks LED's and displays data from Analog Sensors on the Serial Monitor
@@ -42,6 +46,10 @@ Blink LED's while reading data from Analog Sensors
   - Analog Soil Moisture Sensor
 - Software required includes : 
   - Arduino Development IDE
+  - Links to read up on with regards to programming the Arduino from the Raspberry Pi
+    - http://www.instructables.com/id/Program-arduino-from-raspberry-pi/
+    - https://www.youtube.com/watch?v=mfIacE-SPvg
+    - https://www.youtube.com/watch?v=eYu4vHDxA3I
 
 
 Display Simple Web Page (ArduinoProjects/Ethernet/DummyWebPage)
@@ -64,6 +72,10 @@ Display Simple Web Page (ArduinoProjects/Ethernet/DummyWebPage)
 - Software required includes :
   - Arduino Development IDE 
   - Ethernet Library to be downloaded from https://github.com/jcw/ethercard/
+  - Links to read up on with regards to programming the Arduino from the Raspberry Pi
+    - http://www.instructables.com/id/Program-arduino-from-raspberry-pi/
+    - https://www.youtube.com/watch?v=mfIacE-SPvg
+    - https://www.youtube.com/watch?v=eYu4vHDxA3I
 - Articles to read :
   - https://www.youtube.com/watch?v=ahvCyhgXaqc
   - http://en.code-bude.net/2013/06/22/how-to-use-enc28j60-ethernet-shield-with-arduino-mega-2560/ 
@@ -88,6 +100,10 @@ Obtain DHCP lease with DNS and accept Web Requests (ArduinoProjects/Ethernet/Eth
 - Software required includes :
   - Arduino Development IDE 
   - Ethernet Library to be downloaded from https://github.com/jcw/ethercard/
+  - Links to read up on with regards to programming the Arduino from the Raspberry Pi
+    - http://www.instructables.com/id/Program-arduino-from-raspberry-pi/
+    - https://www.youtube.com/watch?v=mfIacE-SPvg
+    - https://www.youtube.com/watch?v=eYu4vHDxA3I
 - Articles to read :
   - https://www.youtube.com/watch?v=ahvCyhgXaqc
   - http://en.code-bude.net/2013/06/22/how-to-use-enc28j60-ethernet-shield-with-arduino-mega-2560/ 
@@ -126,6 +142,10 @@ Obtain data from sensors and display on Web Page (ArduinoProjects/Ethernet/WebPa
 - Software required includes :
   - Arduino Development IDE 
   - Ethernet Library to be downloaded from https://github.com/jcw/ethercard/
+  - Links to read up on with regards to programming the Arduino from the Raspberry Pi
+    - http://www.instructables.com/id/Program-arduino-from-raspberry-pi/
+    - https://www.youtube.com/watch?v=mfIacE-SPvg
+    - https://www.youtube.com/watch?v=eYu4vHDxA3I
 - Articles to read :
   - https://www.youtube.com/watch?v=ahvCyhgXaqc
   - http://en.code-bude.net/2013/06/22/how-to-use-enc28j60-ethernet-shield-with-arduino-mega-2560/
