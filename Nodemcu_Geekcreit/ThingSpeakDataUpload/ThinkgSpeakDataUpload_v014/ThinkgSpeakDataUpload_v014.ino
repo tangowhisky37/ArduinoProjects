@@ -105,6 +105,8 @@ void loop ( void ) {
   Serial.println(sensorValueA0);
   String tweet = String(sensorValueA0);
   ThingSpeak.writeField(myChannelNumber, 1, sensorValueA0, myWriteAPIKey);
+
+  // Connecting to Thingspeak to send out a tweet with current status
   // if connection to thingspeak.com is successful, send your tweet!
   if (client.connect("api.thingspeak.com", 80))
   {
