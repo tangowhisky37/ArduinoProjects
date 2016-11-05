@@ -12,7 +12,7 @@
 #define D2 4
 
 const char *ssid = "PracticalPerformanceAnalyst";
-const char *password = "xxxx";
+const char *password = "xxxxxx";
 ESP8266WebServer server ( 80 );
 const int led = 13;
 int status = WL_IDLE_STATUS;
@@ -22,8 +22,8 @@ WiFiClient  client;
 
 //ThingSpeak Settings
 unsigned long myChannelNumber = 175500;
-const char * myWriteAPIKey = "xxxxxxx";
-String API = "NORYV51SCV0J0218";
+const char * myWriteAPIKey = "xxxxx";
+String API = "xxxxx";
 
 void setup ( void ) {
   pinMode(LED_BUILTIN, OUTPUT);     // Initialize the LED_BUILTIN pin as an output
@@ -117,7 +117,7 @@ void loop ( void ) {
    client.print("\r\n");
   }
   digitalWrite(D2, HIGH);
-  delay(120000); // ThingSpeak will only accept updates every 15 seconds.
+  delay(300000); // ThingSpeak will only accept updates every 15 seconds.
   
 }
 

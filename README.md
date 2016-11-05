@@ -153,7 +153,7 @@ Obtain data from sensors and display on Web Page (ArduinoProjects/Ethernet/WebPa
 
 Blink lights on the NodeMCU ESP8266 board (Code at  Nodemcu_Geekcreit/BlinkLights/Blink_v0_11/)
 - The NodeMCU board is one among the many ESP8266 boards out there but with a bit of a difference. 
-- This board hooks up directly into the USB port of your machine, is breadboard friendly and most importantly works with the Arduino IDE.
+- This board is affordable, connects to a USB port of your machine, is breadboard friendly and most importantly works with the Arduino IDE.
 - This is the Hello world of embedded electronics. You usually use this when you get started with any new board.
 - This simple tutorial includes connecting the NodeMCU board to your machine, setting up the Arduino IDE interface and flashing the board.
 - The sketch involved causes the light on the NodeMCU board to blink.
@@ -170,4 +170,59 @@ Blink lights on the NodeMCU ESP8266 board (Code at  Nodemcu_Geekcreit/BlinkLight
 - Links for purchase :
  - http://www.banggood.com/Geekcreit-Doit-NodeMcu-Lua-ESP8266-ESP-12E-WIFI-Development-Board-p-985891.html
  - http://www.nodemcu.com
+
+
+IoT (Internet Of Things) Web Server using the NodeMCU ESP8266 board (Code at Nodemcu_Geekcreit/Web_Server/)
+- The NodeMCU board is one among the many ESP8266 boards out there but with a bit of a difference.
+- This board is affordable, connects to a USB port of your machine, is breadboard friendly and most importantly works with the Arduino IDE.
+- This program is a copy of the Web Server program that comes with the NodeMCU tutorials part of the examples in your Arduino IDE for NodeMCU.
+- To get this program working you will need the credentials for a local wireless network so that you can connect to it.
+- You can hook up all sorts of sensors (Digital or Analog) to your NodeMCU board and have it present values through the web page.
+- Connections for this circuit include -
+ - Connecting the NodeMCU board to the USB port of your development machine
+ - Software required includes -
+  - Arduino IDE
+  - ESP8266 libraries packes into the Arduino IDE which include the packages for NodeMCU board
+  - Here are some of the links you might want to refer to with regards to configuring the Arduino IDE for ESP8266 development :
+    - https://learn.adafruit.com/adafruit-huzzah-esp8266-breakout/using-arduino-ide
+    - https://learn.sparkfun.com/tutorials/esp8266-thing-hookup-guide/installing-the-esp8266-arduino-addon
+- Hardware required includes :
+ - 1 x NodeMCU board
+- Links for purchase :
+  - http://www.banggood.com/Geekcreit-Doit-NodeMcu-Lua-ESP8266-ESP-12E-WIFI-Development-Board-p-985891.html
+  - http://www.nodemcu.com
+
+
+IoT (Internet Of Things) Soil Moisture Sensor that Tweets using NodeMCU with ESP8266 (Code at Nodemcu_Geekcreit/ThingSpeakDataUpload)
+- The NodeMCU board is one among the many ESP8266 boards out there but with a bit of a difference.
+- This board is affordable, connects to a USB port of your machine, is breadboard friendly and most importantly works with the Arduino IDE.
+- As part of this program you will connect to the local wireless network, read values from the Soil moisture sensor and tweet the values.
+- To get this program working you will need the credentials for a local wireless network so that you can connect to it.
+- You will need to setup an account at www.thingspeak.com, create a channel and setup it up so that you can write to the channel using your NodeMCU.
+- You will also need to setup a Twitter account at www.twitter.com and configure the thingtweet application.
+- The thingtweeet application (https://thingspeak.com/apps/thingtweets) requires that you register your Twitter account with Thingspeak.
+- Over the coming weeks (or months..as and when i can find time) I will update the code such that it only tweets when certain conditions are met.
+- Currently the code tweets every 5 minutes
+- Connections for this circuit include -
+ - Connecting the NodeMCU board to the USB port of your development machine
+  - Software required includes -
+   - Arduino IDE
+   - ESP8266 libraries packes into the Arduino IDE which include the packages for NodeMCU board
+   - Here are some of the links you might want to refer to with regards to configuring the Arduino IDE for ESP8266 development :
+    - https://learn.adafruit.com/adafruit-huzzah-esp8266-breakout/using-arduino-ide
+    - https://learn.sparkfun.com/tutorials/esp8266-thing-hookup-guide/installing-the-esp8266-arduino-addon
+    - Read up on NodeMCU at http://www.nodemcu.com
+    - Twitter account
+    - Thingspeak account
+    - Configuration of Thingtweet application so that it is integrated with your Twitter account and can publish to it
+- Hardware required includes :
+ - 1 x NodeMCU board
+- Links for purchase :
+ - NodeMCU - http://www.banggood.com/Geekcreit-Doit-NodeMcu-Lua-ESP8266-ESP-12E-WIFI-Development-Board-p-985891.html
+ - Soil Moisture Sensor : https://www.sparkfun.com/products/13322
+ - NPN 2N222A : https://www.adafruit.com/product/756
+ - 1 x 100 Ohm Resistor
+ - 1 x 1K Ohm Resistor
+ - Dupont Male to Male breadboard wires
+ - Dupont Femal to Male breadboard wires
 
