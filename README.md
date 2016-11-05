@@ -151,3 +151,23 @@ Obtain data from sensors and display on Web Page (ArduinoProjects/Ethernet/WebPa
   - http://en.code-bude.net/2013/06/22/how-to-use-enc28j60-ethernet-shield-with-arduino-mega-2560/
 
 
+Blink lights on the NodeMCU ESP8266 board (Code at  Nodemcu_Geekcreit/BlinkLights/Blink_v0_11/)
+- The NodeMCU board is one among the many ESP8266 boards out there but with a bit of a difference. 
+- This board hooks up directly into the USB port of your machine, is breadboard friendly and most importantly works with the Arduino IDE.
+- This is the Hello world of embedded electronics. You usually use this when you get started with any new board.
+- This simple tutorial includes connecting the NodeMCU board to your machine, setting up the Arduino IDE interface and flashing the board.
+- The sketch involved causes the light on the NodeMCU board to blink.
+- Connections for this circuit include - 
+ - Connecting the NodeMCU board to the USB port of your development machine
+- Software required includes - 
+ - Arduino IDE
+ - ESP8266 libraries packes into the Arduino IDE which include the packages for NodeMCU board
+ - Here are some of the links you might want to refer to with regards to configuring the Arduino IDE for ESP8266 development : 
+  - https://learn.adafruit.com/adafruit-huzzah-esp8266-breakout/using-arduino-ide
+  - https://learn.sparkfun.com/tutorials/esp8266-thing-hookup-guide/installing-the-esp8266-arduino-addon
+- Hardware required includes :
+ - 1 x NodeMCU board
+- Links for purchase :
+ - http://www.banggood.com/Geekcreit-Doit-NodeMcu-Lua-ESP8266-ESP-12E-WIFI-Development-Board-p-985891.html
+ - http://www.nodemcu.com
+

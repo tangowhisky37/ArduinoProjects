@@ -10,7 +10,7 @@
 #define VOLTAGE_MAXCOUNTS 1023.0
 
 const char *ssid = "PracticalPerformanceAnalyst";
-const char *password = "youreallycantguessthis1";
+const char *password = "xxxxxx";
 ESP8266WebServer server ( 80 );
 const int led = 13;
 int status = WL_IDLE_STATUS;
@@ -20,7 +20,7 @@ WiFiClient  client;
 
 //ThingSpeak Settings
 unsigned long myChannelNumber = 175500;
-const char * myWriteAPIKey = "SO4G496S3L6GNWG2";
+const char * myWriteAPIKey = "xxxxxxx";
 
 void setup ( void ) {
   pinMode(LED_BUILTIN, OUTPUT);     // Initialize the LED_BUILTIN pin as an output

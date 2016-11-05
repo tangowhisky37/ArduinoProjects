@@ -12,7 +12,7 @@
 #define D2 4
 
 const char *ssid = "PracticalPerformanceAnalyst";
-const char *password = "youreallycantguessthis1";
+const char *password = "xxxx";
 ESP8266WebServer server ( 80 );
 const int led = 13;
 int status = WL_IDLE_STATUS;
@@ -22,7 +22,7 @@ WiFiClient  client;
 
 //ThingSpeak Settings
 unsigned long myChannelNumber = 175500;
-const char * myWriteAPIKey = "SO4G496S3L6GNWG2";
+const char * myWriteAPIKey = "xxxxxxx";
 String API = "NORYV51SCV0J0218";
 
 void setup ( void ) {

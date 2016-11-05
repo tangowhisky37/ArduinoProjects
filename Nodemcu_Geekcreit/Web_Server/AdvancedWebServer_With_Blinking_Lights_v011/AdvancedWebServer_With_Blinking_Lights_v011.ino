@@ -34,7 +34,7 @@
 #include <ESP8266mDNS.h>
 
 const char *ssid = "PracticalPerformanceAnalyst";
-const char *password = "youreallycantguessthis1";
+const char *password = "xxxxxx";
 ESP8266WebServer server ( 80 );
 const int led = 13;
 
