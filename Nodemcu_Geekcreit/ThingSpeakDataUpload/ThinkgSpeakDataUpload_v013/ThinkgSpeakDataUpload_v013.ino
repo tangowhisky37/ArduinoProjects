@@ -98,15 +98,12 @@ void loop ( void ) {
   // pieces of information in a channel.  Here, we write to field 1.
   //ThingSpeak.writeField(myChannelNumber, 1, voltage, myWriteAPIKey);
   
-   //Testing Code
   digitalWrite(D2, LOW);
-  delay(1000);
+  delay(2000);
   Serial.println(sensorValueA0);
   ThingSpeak.writeField(myChannelNumber, 1, sensorValueA0, myWriteAPIKey);
   digitalWrite(D2, HIGH);
-  delay(60000); // ThingSpeak will only accept updates every 15 seconds.
-  //delay(5000);
-  delay(1000);
-
+  delay(120000); // ThingSpeak will only accept updates every 15 seconds.
+  
 }
 

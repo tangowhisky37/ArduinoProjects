@@ -2,7 +2,7 @@
 A collection of all my Arduino Projects
 
 Simple Blink LED's
-- This program simply blinks LED's
+- This program simply blinks LED's (Blink_LEDs/Blink3LEDs)
 - Connections for this circuit include : 
   - Connect the Digital pins on the Arduino to the LED. 
   - On the MEGA 2560, D0 is Rx0 and D1 is Tx0. You will need to use D2 onwards.
@@ -23,7 +23,7 @@ Simple Blink LED's
     - https://www.youtube.com/watch?v=mfIacE-SPvg
     - https://www.youtube.com/watch?v=eYu4vHDxA3I 
 
-Blink LED's while reading data from Analog Sensors
+Blink LED's while reading data from Analog Sensors (Blink_LEDs/Blink3LEDsWithSensors)
 - This program simply blinks LED's and displays data from Analog Sensors on the Serial Monitor
 - Connections for this circuit include :
   - Connect the Digital pins on the Arduino to the LED.

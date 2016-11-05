@@ -1,6 +1,7 @@
 
 #include <ESP8266WiFi.h>
 #include <WiFiClient.h>
+#include <WiFiServer.h>
 #include <ESP8266WebServer.h>
 #include <ESP8266mDNS.h>
 #include <SPI.h>
@@ -22,6 +23,7 @@ WiFiClient  client;
 //ThingSpeak Settings
 unsigned long myChannelNumber = 175500;
 const char * myWriteAPIKey = "SO4G496S3L6GNWG2";
+String API = "NORYV51SCV0J0218";
 
 void setup ( void ) {
   pinMode(LED_BUILTIN, OUTPUT);     // Initialize the LED_BUILTIN pin as an output
@@ -98,15 +100,22 @@ void loop ( void ) {
   // pieces of information in a channel.  Here, we write to field 1.
   //ThingSpeak.writeField(myChannelNumber, 1, voltage, myWriteAPIKey);
   
-   //Testing Code
   digitalWrite(D2, LOW);
-  delay(1000);
+  delay(2000);
   Serial.println(sensorValueA0);
+  String tweet = String(sensorValueA0);
   ThingSpeak.writeField(myChannelNumber, 1, sensorValueA0, myWriteAPIKey);
+  // if connection to thingspeak.com is successful, send your tweet!
+  if (client.connect("api.thingspeak.com", 80))
+  {
+   client.print("GET /apps/thingtweet/1/statuses/update?key=" + API + "&status=Current water level on Plant 1 is " + tweet + " HTTP/1.1\r\n");
+   client.print("Host: api.thingspeak.com\r\n"); 
+   client.print("Accept: */*\r\n"); 
+   client.print("User-Agent: Mozilla/4.0 (compatible; esp8266 Lua; Windows NT 5.1)\r\n");
+   client.print("\r\n");
+  }
   digitalWrite(D2, HIGH);
-  delay(60000); // ThingSpeak will only accept updates every 15 seconds.
-  //delay(5000);
-  delay(1000);
-
+  delay(120000); // ThingSpeak will only accept updates every 15 seconds.
+  
 }
 
