@@ -215,6 +215,7 @@ IoT (Internet Of Things) Soil Moisture Sensor that Tweets using NodeMCU with ESP
     - Twitter account
     - Thingspeak account
     - Configuration of Thingtweet application so that it is integrated with your Twitter account and can publish to it
+- Diagram - View the Fritzing diagram here : https://github.com/tangowhisky37/ArduinoProjects/blob/master/Nodemcu_Geekcreit/ThingSpeakDataUpload/Fritzing/SoilMoistureSensor_v0.1_bb.png
 - Hardware required includes :
  - 1 x NodeMCU board
 - Links for purchase :
