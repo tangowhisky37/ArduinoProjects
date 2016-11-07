@@ -210,6 +210,7 @@ IoT (Internet Of Things) Soil Moisture Sensor that Tweets using NodeMCU with ESP
 - The NodeMCU board is one among the many ESP8266 boards out there but with a bit of a difference.
 - This board is affordable, connects to a USB port of your machine, is breadboard friendly and most importantly works with the Arduino IDE.
 - As part of this program you will connect to the local wireless network, read values from the Soil moisture sensor and tweet the values.
+- The code also uses the Thingspeak Arduino library to upload data points to ThingSpeak and view graphically the data being logged. 
 - To get this program working you will need the credentials for a local wireless network so that you can connect to it.
 - You will need to setup an account at www.thingspeak.com, create a channel and setup it up so that you can write to the channel using your NodeMCU.
 - You will also need to setup a Twitter account at www.twitter.com and configure the thingtweet application.
@@ -221,6 +222,7 @@ IoT (Internet Of Things) Soil Moisture Sensor that Tweets using NodeMCU with ESP
   - Software required includes -
    - Arduino IDE
    - ESP8266 libraries packes into the Arduino IDE which include the packages for NodeMCU board
+   - Thingspeak IoT libraries which can be installed using the Arduino IDE
    - Here are some of the links you might want to refer to with regards to configuring the Arduino IDE for ESP8266 development :
     - https://learn.adafruit.com/adafruit-huzzah-esp8266-breakout/using-arduino-ide
     - https://learn.sparkfun.com/tutorials/esp8266-thing-hookup-guide/installing-the-esp8266-arduino-addon
@@ -234,7 +236,7 @@ IoT (Internet Of Things) Soil Moisture Sensor that Tweets using NodeMCU with ESP
 - Links for purchase :
  - NodeMCU - http://www.banggood.com/Geekcreit-Doit-NodeMcu-Lua-ESP8266-ESP-12E-WIFI-Development-Board-p-985891.html
  - Soil Moisture Sensor : https://www.sparkfun.com/products/13322
- - NPN 2N222A : https://www.adafruit.com/product/756
+ - NPN 2N2222A : https://www.adafruit.com/product/756
  - 1 x 100 Ohm Resistor
  - 1 x 1K Ohm Resistor
  - Dupont Male to Male breadboard wires
