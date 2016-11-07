@@ -1,6 +1,19 @@
 # ArduinoProjects
 A collection of all my Arduino Projects
 
+Important Links - 
+- https://iotbytes.wordpress.com/
+- https://learn.sparkfun.com/tutorials/tags/internet-of-things?page=all
+- https://blog.adafruit.com/category/iot/
+- https://nurdspace.nl/ESP8266
+- https://github.com/esp8266/Arduino
+- https://learn.sparkfun.com/tutorials/esp8266-thing-hookup-guide/introduction
+- http://randomnerdtutorials.com/getting-started-with-esp8266-wifi-transceiver-review/
+- https://learn.adafruit.com/adafruit-huzzah-esp8266-breakout/overview
+- http://iot-playground.com/component/tags/tag/11-esp8266
+- https://www.hackster.io/search?q=ESP8266
+- http://hackaday.com/2015/03/18/how-to-directly-program-an-inexpensive-esp8266-wifi-module/
+
 Simple Blink LED's
 - This program simply blinks LED's (Blink_LEDs/Blink3LEDs)
 - Connections for this circuit include : 
