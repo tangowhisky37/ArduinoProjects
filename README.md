@@ -142,6 +142,8 @@ Obtain data from sensors and display on Web Page (ArduinoProjects/Ethernet/WebPa
   - Connect up the Analog sensors you might have. In this case I've used the following sensors -
   - Soil Moisture Sensor, Alcohol Sensor and LDR Sensor. Follow the connection diagrams for your sensors.
   - Please connect up the relevant Analog sensors to the available Analog ports and change code accordingly.
+- Diagram - 
+  - See fritzing diagram here - https://github.com/tangowhisky37/ArduinoProjects/blob/master/Ethernet/Fritzing/Arduino_Mega_2650_with_Enc28j60_v0.2_bb.png
 - Hardware required includes :
   - Arduino MEGA 2560 R3 (You can choose your own version of the Arduino)
   - Addon board based on Enc28j60 (http://www.ebay.com/bhp/enc28j60-module)
@@ -231,7 +233,7 @@ IoT (Internet Of Things) Soil Moisture Sensor that Tweets using NodeMCU with ESP
     - Thingspeak account
     - Configuration of Thingtweet application so that it is integrated with your Twitter account and can publish to it
 - Diagram - 
- - View the Fritzing diagram here : https://github.com/tangowhisky37/ArduinoProjects/blob/master/Nodemcu_Geekcreit/ThingSpeakDataUpload/Fritzing/SoilMoistureSensor_v0.2_bb.png
+ - View the Fritzing diagram here : https://github.com/tangowhisky37/ArduinoProjects/blob/master/Nodemcu_Geekcreit/ThingSpeakDataUpload/Fritzing/SoilMoistoreSensor_v0.2_bb.png
  - v0.1 of the Fritzing uses a Wemos Pro instead of a NodeMCU since i couldn't find the right template to use. Please refer to v0.2 
 - Hardware required includes :
  - 1 x NodeMCU board
