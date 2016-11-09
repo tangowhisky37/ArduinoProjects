@@ -128,7 +128,7 @@ Obtain data from sensors and display on Web Page (ArduinoProjects/Ethernet/WebPa
 - Connections for this circuit include :
   - Connections between the Enc28j60 and Arduino MEGA 2560 R3 are as follows :
     - Enc2860 Ground connected to Ground on the Arduino MEGA 2560 R3
-    - Enc2860 3.3 connected to 3.3v on the Arduino MEGA 2560 R3
+    - Enc2860 3.3v connected to 3.3v on the Arduino MEGA 2560 R3
     - Enc2860 SO connected to D50 (Pin 50) on the Arduino MEGA 2560 R3 
     - Enc2860 SI connected to D51 (Pin 51) on the Arduino MEGA 2560 R3
     - Enc2860 SCK connected to D52 (Pin 52) on the Arduino MEGA 2560 R3
@@ -230,7 +230,9 @@ IoT (Internet Of Things) Soil Moisture Sensor that Tweets using NodeMCU with ESP
     - Twitter account
     - Thingspeak account
     - Configuration of Thingtweet application so that it is integrated with your Twitter account and can publish to it
-- Diagram - View the Fritzing diagram here : https://github.com/tangowhisky37/ArduinoProjects/blob/master/Nodemcu_Geekcreit/ThingSpeakDataUpload/Fritzing/SoilMoistureSensor_v0.1_bb.png
+- Diagram - 
+ - View the Fritzing diagram here : https://github.com/tangowhisky37/ArduinoProjects/blob/master/Nodemcu_Geekcreit/ThingSpeakDataUpload/Fritzing/SoilMoistureSensor_v0.2_bb.png
+ - v0.1 of the Fritzing uses a Wemos Pro instead of a NodeMCU since i couldn't find the right template to use. Please refer to v0.2 
 - Hardware required includes :
  - 1 x NodeMCU board
 - Links for purchase :
