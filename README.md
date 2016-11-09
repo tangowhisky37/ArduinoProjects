@@ -76,6 +76,8 @@ Display Simple Web Page (ArduinoProjects/Ethernet/DummyWebPage)
     - Enc2860 SI connected to D51 (Pin 51) on the Arduino MEGA 2560 R3
     - Enc2860 SCK connected to D52 (Pin 52) on the Arduino MEGA 2560 R3
     - Enc2860 CS connected to D53 (Pin 53) on the Arduino MEGA 2560 R3
+- Diagram -
+  - See fritzing diagram here - https://github.com/tangowhisky37/ArduinoProjects/blob/master/Ethernet/Fritzing/Arduino_Mega_2650_with_Enc28j60_v0.21_bb.png
 - Hardware required includes : 
   - Arduino MEGA 2560 R3 (You can choose your own version of the Arduino)
   - Addon board based on Enc28j60 (http://www.ebay.com/bhp/enc28j60-module)
@@ -104,6 +106,8 @@ Obtain DHCP lease with DNS and accept Web Requests (ArduinoProjects/Ethernet/Eth
     - Enc2860 SI connected to D51 (Pin 51) on the Arduino MEGA 2560 R3
     - Enc2860 SCK connected to D52 (Pin 52) on the Arduino MEGA 2560 R3
     - Enc2860 CS connected to D53 (Pin 53) on the Arduino MEGA 2560 R3
+- Diagram -
+  - See fritzing diagram here - https://github.com/tangowhisky37/ArduinoProjects/blob/master/Ethernet/Fritzing/Arduino_Mega_2650_with_Enc28j60_v0.21_bb.png
 - Hardware required includes :
   - Arduino MEGA 2560 R3 (You can choose your own version of the Arduino)
   - Addon board based on Enc28j60 (http://www.ebay.com/bhp/enc28j60-module)
@@ -143,7 +147,7 @@ Obtain data from sensors and display on Web Page (ArduinoProjects/Ethernet/WebPa
   - Soil Moisture Sensor, Alcohol Sensor and LDR Sensor. Follow the connection diagrams for your sensors.
   - Please connect up the relevant Analog sensors to the available Analog ports and change code accordingly.
 - Diagram - 
-  - See fritzing diagram here - https://github.com/tangowhisky37/ArduinoProjects/blob/master/Ethernet/Fritzing/Arduino_Mega_2650_with_Enc28j60_v0.2_bb.png
+  - See fritzing diagram here - https://github.com/tangowhisky37/ArduinoProjects/blob/master/Ethernet/Fritzing/Arduino_Mega_2650_with_Enc28j60_v0.21_bb.png 
 - Hardware required includes :
   - Arduino MEGA 2560 R3 (You can choose your own version of the Arduino)
   - Addon board based on Enc28j60 (http://www.ebay.com/bhp/enc28j60-module)
