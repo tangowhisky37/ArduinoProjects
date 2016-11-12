@@ -191,6 +191,33 @@ Blink lights on the NodeMCU ESP8266 board (Code at  Nodemcu_Geekcreit/BlinkLight
  - http://www.nodemcu.com
 
 
+NodeMCU - Identify MAC Addres, Connect to a wireless network and blinks lights(Code at Nodemcu_Geekcreit/ObtainMACAddress/)
+- The NodeMCU board is one among the many ESP8266 boards out there but with a bit of a difference.
+- This board is affordable, connects to a USB port of your machine, is breadboard friendly and most importantly works with the Arduino IDE.
+- When working with NodeMCU boards one of the initial challenges is configuring your wireless router to allow the NodeMCU board to speak to it.
+- Most routers (including mine at home) use whitelisting or a MAC address list to allow a set of endpoints to connect to it. This is more for purposes of security than anything else. 
+- If this is the case with you as well, you will need to know the MAC address of the NodeMCU board to be able to configure the Wireless AP (Access Point) to allow your NodeMCU board to connect to it.
+- Usually this is something you would only do once when you get started with any new NodeMCU board. This simple tutorial includes connecting the NodeMCU board to your machine, setting up the Arduino IDE interface and flashing the board with the code provided.
+- Once you've flashed the board, open up the Serial monitor window in your Arduino IDE. Hit the re-set button on the NodeMCU to get the board to reboot.
+- With the board booting up you should now see the MAC address for your new NodeMCU board on the Arduino IDE serial monitor. 
+- Now's the opportunity to add the MAC address for the new NodeMCU board onto the whitelist of your wireless router. Once you've done that go back to your NodeMCU.
+- Reset the board using the re-set button on the NodeMCU with the Arduino Serial Monitor open. You should now see the NodeMCU obtaining a DHCP lease from your wireless router. 
+- The sketch involved causes the light on the NodeMCU board to blink.
+- Connections for this circuit include -
+ - Connecting the NodeMCU board to the USB port of your development machine
+ - Software required includes -
+  - Arduino IDE
+  - ESP8266 libraries packes into the Arduino IDE which include the packages for NodeMCU board
+ - Here are some of the links you might want to refer to with regards to configuring the Arduino IDE for ESP8266 development :
+   - https://learn.adafruit.com/adafruit-huzzah-esp8266-breakout/using-arduino-ide
+   - https://learn.sparkfun.com/tutorials/esp8266-thing-hookup-guide/installing-the-esp8266-arduino-addon
+- Hardware required includes :
+ - 1 x NodeMCU board
+ - Links for purchase :
+  - http://www.banggood.com/Geekcreit-Doit-NodeMcu-Lua-ESP8266-ESP-12E-WIFI-Development-Board-p-985891.html
+   - http://www.nodemcu.com
+
+
 IoT (Internet Of Things) Web Server using the NodeMCU ESP8266 board (Code at Nodemcu_Geekcreit/Web_Server/)
 - The NodeMCU board is one among the many ESP8266 boards out there but with a bit of a difference.
 - This board is affordable, connects to a USB port of your machine, is breadboard friendly and most importantly works with the Arduino IDE.
