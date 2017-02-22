@@ -16,7 +16,7 @@ class Gsender
     private:
         const int SMTP_PORT = 465;
         const char* SMTP_SERVER = "smtp.gmail.com";
-        const char* EMAILBASE64_LOGIN = "---See link to customize content---";  // www.instructables.com/idESP8266-GMil-Sender/
+        const char* EMAILBASE64_LOGIN = "---See link to customize content---";  // www.instructables.com/id/ESP8266-GMail-Sender/
         const char* EMAILBASE64_PASSWORD = "---See link to customize content---";
         const char* FROM = "youremailaddress@gmail.com";
         const char* _error = nullptr;
