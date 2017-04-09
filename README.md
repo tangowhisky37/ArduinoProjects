@@ -287,7 +287,8 @@ IoT (Internet Of Things) Soil Moisture Sensor that Tweets & Emails using NodeMCU
 - The NodeMCU board is one among the many ESP8266 boards out there but with a bit of a difference.
 - This board is highly affordable (costs around 8-10 AUD), connects to a USB port of your machine, is breadboard friendly and most importantly works with the Arduino IDE.
 - As part of this program you will connect to the local wireless network, read values from the Soil moisture sensor and tweet the values.
-- The code also uses the Thingspeak Arduino library to upload data points to ThingSpeak and view graphically the data being logged. 
+- This version of the Soil Moisture Sensor program also uses the Thingspeak Arduino library to upload data points to ThingSpeak and view graphically the data being logged. 
+- In addition the modification includes sending email alerts based on an assessment of how low the moisture in the soil is. This is a configurable value and while I've set this to 100 you can change this to any other value that works for your setup at home.
 - To get this program working you will need the credentials for a local wireless network so that you can connect to it.
 - You will need to setup an account at www.thingspeak.com, create a channel and setup it up so that you can write to the channel using your NodeMCU.
 - You will then need to head off and setup a Twitter account at www.twitter.com and configure the thingtweet application.
