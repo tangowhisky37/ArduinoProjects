@@ -239,20 +239,26 @@ IoT (Internet Of Things) Web Server using the NodeMCU ESP8266 board (https://git
   - http://www.nodemcu.com
 
 
-IoT (Internet Of Things) Soil Moisture Sensor that Tweets using NodeMCU with ESP8266 (https://github.com/tangowhisky37/ArduinoProjects/tree/master/Nodemcu_Geekcreit/ThingSpeakDataUpload/ThinkgSpeakDataUpload_v017)
+IoT (Internet Of Things) Soil Moisture Sensor that Tweets using NodeMCU with ESP8266 v1 (https://github.com/tangowhisky37/ArduinoProjects/tree/master/Nodemcu_Geekcreit/ThingSpeakDataUpload/ThinkgSpeakDataUpload_v014)
 - The NodeMCU board is one among the many ESP8266 boards out there but with a bit of a difference.
-- This board is affordable, connects to a USB port of your machine, is breadboard friendly and most importantly works with the Arduino IDE.
+- This board is highly affordable (costs around 8-10 AUD), connects to a USB port of your machine, is breadboard friendly and most importantly works with the Arduino IDE.
 - As part of this program you will connect to the local wireless network, read values from the Soil moisture sensor and tweet the values.
 - The code also uses the Thingspeak Arduino library to upload data points to ThingSpeak and view graphically the data being logged. 
 - To get this program working you will need the credentials for a local wireless network so that you can connect to it.
 - You will need to setup an account at www.thingspeak.com, create a channel and setup it up so that you can write to the channel using your NodeMCU.
-- You will also need to setup a Twitter account at www.twitter.com and configure the thingtweet application.
-- The thingtweeet application (https://thingspeak.com/apps/thingtweets) requires that you register your Twitter account with Thingspeak.
+- You will then need to head off and setup a Twitter account at www.twitter.com and configure the thingtweet application.
+- The thingtweeet application (https://thingspeak.com/apps/thingtweets) requires that you register your Twitter account with Thingspeak.  Here's a summary of the steps involved. Please refer to the details at the Thingspeak website. - 
+  - Sign in to https://thingspeak.com/login, select Apps from the menu, and then click on ThingTweet.
+  - Under the ThingTweet App, select “Link new Twitter account”. 
+  - This will redirect you to Twitter to see if you want the app to have the ability to access your account.
+  - You can Allow or Deny the process. Once you have confirmed the right Twitter account, Twitter will send you back to ThingSpeak.
+  - The app generates a ThingTweet API Key for you to use. If you send an HTTP POST with your ThingTweet API Key, then the message will be relayed to Twitter. 
+  - All of the parameters from the Twitter API (statuses/update) are possible including geolocation.
 - Over the coming weeks (or months..as and when i can find time) I will update the code such that it only tweets when certain conditions are met.
 - Currently the code tweets every 5 minutes
 - Connections for this circuit include -
  - Connecting the NodeMCU board to the USB port of your development machine
-  - Software required includes -
+ - Software required includes -
    - Arduino IDE
    - ESP8266 libraries packes into the Arduino IDE which include the packages for NodeMCU board
    - Thingspeak IoT libraries which can be installed using the Arduino IDE
@@ -264,16 +270,59 @@ IoT (Internet Of Things) Soil Moisture Sensor that Tweets using NodeMCU with ESP
     - Thingspeak account
     - Configuration of Thingtweet application so that it is integrated with your Twitter account and can publish to it
 - Diagram - 
- - View the Fritzing diagram here : https://github.com/tangowhisky37/ArduinoProjects/blob/master/Nodemcu_Geekcreit/ThingSpeakDataUpload/Fritzing/SoilMoistoreSensor_v0.2_bb.png
- - v0.1 of the Fritzing uses a Wemos Pro instead of a NodeMCU since i couldn't find the right template to use. Please refer to v0.2 
+  - View the Fritzing diagram here : https://github.com/tangowhisky37/ArduinoProjects/blob/master/Nodemcu_Geekcreit/ThingSpeakDataUpload/Fritzing/SoilMoistoreSensor_v0.2_bb.png 
+  - v0.1 of the Fritzing uses a Wemos Pro instead of a NodeMCU since i couldn't find the right template to use. Please refer to v0.2 
 - Hardware required includes :
- - 1 x NodeMCU board
-- Links for purchase :
- - NodeMCU - http://www.banggood.com/Geekcreit-Doit-NodeMcu-Lua-ESP8266-ESP-12E-WIFI-Development-Board-p-985891.html
- - Soil Moisture Sensor : https://www.sparkfun.com/products/13322
- - NPN 2N2222A : https://www.adafruit.com/product/756
- - 1 x 100 Ohm Resistor
- - 1 x 1K Ohm Resistor
- - Dupont Male to Male breadboard wires
- - Dupont Femal to Male breadboard wires
+  - 1 x NodeMCU board
+  - Links for purchase :
+    - NodeMCU - http://www.banggood.com/Geekcreit-Doit-NodeMcu-Lua-ESP8266-ESP-12E-WIFI-Development-Board-p-985891.html
+    - Soil Moisture Sensor : https://www.sparkfun.com/products/13322
+    - NPN 2N2222A : https://www.adafruit.com/product/756
+    - 1 x 100 Ohm Resistor
+    - 1 x 1K Ohm Resistor
+    - Dupont Male to Male breadboard wires
+    - Dupont Femal to Male breadboard wires
 
+IoT (Internet Of Things) Soil Moisture Sensor that Tweets & Emails using NodeMCU with ESP8266 v2 (https://github.com/tangowhisky37/ArduinoProjects/tree/master/Nodemcu_Geekcreit/ThingSpeakDataUpload/ThinkgSpeakDataUpload_v017)
+- The NodeMCU board is one among the many ESP8266 boards out there but with a bit of a difference.
+- This board is highly affordable (costs around 8-10 AUD), connects to a USB port of your machine, is breadboard friendly and most importantly works with the Arduino IDE.
+- As part of this program you will connect to the local wireless network, read values from the Soil moisture sensor and tweet the values.
+- The code also uses the Thingspeak Arduino library to upload data points to ThingSpeak and view graphically the data being logged. 
+- To get this program working you will need the credentials for a local wireless network so that you can connect to it.
+- You will need to setup an account at www.thingspeak.com, create a channel and setup it up so that you can write to the channel using your NodeMCU.
+- You will then need to head off and setup a Twitter account at www.twitter.com and configure the thingtweet application.
+- The thingtweeet application (https://thingspeak.com/apps/thingtweets) requires that you register your Twitter account with Thingspeak.  Here's a summary of the steps involved. Please refer to the details at the Thingspeak website. - 
+  - Sign in to https://thingspeak.com/login, select Apps from the menu, and then click on ThingTweet.
+  - Under the ThingTweet App, select “Link new Twitter account”. 
+  - This will redirect you to Twitter to see if you want the app to have the ability to access your account.
+  - You can Allow or Deny the process. Once you have confirmed the right Twitter account, Twitter will send you back to ThingSpeak.
+  - The app generates a ThingTweet API Key for you to use. If you send an HTTP POST with your ThingTweet API Key, then the message will be relayed to Twitter. 
+  - All of the parameters from the Twitter API (statuses/update) are possible including geolocation.
+- Over the coming weeks (or months..as and when i can find time) I will update the code such that it only tweets when certain conditions are met.
+- Currently the code tweets every 5 minutes
+- Connections for this circuit include -
+ - Connecting the NodeMCU board to the USB port of your development machine
+ - Software required includes -
+   - Arduino IDE
+   - ESP8266 libraries packes into the Arduino IDE which include the packages for NodeMCU board
+   - Thingspeak IoT libraries which can be installed using the Arduino IDE
+   - Here are some of the links you might want to refer to with regards to configuring the Arduino IDE for ESP8266 development :
+    - https://learn.adafruit.com/adafruit-huzzah-esp8266-breakout/using-arduino-ide
+    - https://learn.sparkfun.com/tutorials/esp8266-thing-hookup-guide/installing-the-esp8266-arduino-addon
+    - Read up on NodeMCU at http://www.nodemcu.com
+    - Twitter account
+    - Thingspeak account
+    - Configuration of Thingtweet application so that it is integrated with your Twitter account and can publish to it
+- Diagram - 
+  - View the Fritzing diagram here : https://github.com/tangowhisky37/ArduinoProjects/blob/master/Nodemcu_Geekcreit/ThingSpeakDataUpload/Fritzing/SoilMoistoreSensor_v0.2_bb.png 
+  - v0.1 of the Fritzing uses a Wemos Pro instead of a NodeMCU since i couldn't find the right template to use. Please refer to v0.2 
+- Hardware required includes :
+  - 1 x NodeMCU board
+  - Links for purchase :
+    - NodeMCU - http://www.banggood.com/Geekcreit-Doit-NodeMcu-Lua-ESP8266-ESP-12E-WIFI-Development-Board-p-985891.html
+    - Soil Moisture Sensor : https://www.sparkfun.com/products/13322
+    - NPN 2N2222A : https://www.adafruit.com/product/756
+    - 1 x 100 Ohm Resistor
+    - 1 x 1K Ohm Resistor
+    - Dupont Male to Male breadboard wires
+    - Dupont Femal to Male breadboard wires
