@@ -14,7 +14,7 @@ Important Links -
 - https://www.hackster.io/search?q=ESP8266
 - http://hackaday.com/2015/03/18/how-to-directly-program-an-inexpensive-esp8266-wifi-module/
 
-Simple Blink LED's
+Simple Blink LED's (https://github.com/tangowhisky37/ArduinoProjects/tree/master/Blink_LEDs)
 - This program simply blinks LED's (Blink_LEDs/Blink3LEDs)
 - Connections for this circuit include : 
   - Connect the Digital pins on the Arduino to the LED. 
@@ -36,7 +36,7 @@ Simple Blink LED's
     - https://www.youtube.com/watch?v=mfIacE-SPvg
     - https://www.youtube.com/watch?v=eYu4vHDxA3I 
 
-Blink LED's while reading data from Analog Sensors (Blink_LEDs/Blink3LEDsWithSensors)
+Blink LED's while reading data from Analog Sensors (https://github.com/tangowhisky37/ArduinoProjects/tree/master/Blink_LEDs)
 - This program simply blinks LED's and displays data from Analog Sensors on the Serial Monitor
 - Connections for this circuit include :
   - Connect the Digital pins on the Arduino to the LED.
@@ -65,7 +65,7 @@ Blink LED's while reading data from Analog Sensors (Blink_LEDs/Blink3LEDsWithSen
     - https://www.youtube.com/watch?v=eYu4vHDxA3I
 
 
-Display Simple Web Page (ArduinoProjects/Ethernet/DummyWebPage)
+Display Simple Web Page (https://github.com/tangowhisky37/ArduinoProjects/tree/master/Ethernet/DummyWebPagev0.11)
 - This program uses the Ethernet Addon based on Enc28j60 and displays a web page over ethernet
 - I configured my Raspberry Pi as a DHCP server using ISC DHCP and provided the Arduino MEGA 2560 R3 a lease over ethernet. 
 - Connections for this circuit include :
@@ -95,7 +95,7 @@ Display Simple Web Page (ArduinoProjects/Ethernet/DummyWebPage)
   - https://www.youtube.com/watch?v=ahvCyhgXaqc
   - http://en.code-bude.net/2013/06/22/how-to-use-enc28j60-ethernet-shield-with-arduino-mega-2560/ 
 
-Obtain DHCP lease with DNS and accept Web Requests (ArduinoProjects/Ethernet/EthernetDemoUsingDhcpDns/)
+Obtain DHCP lease with DNS and accept Web Requests (https://github.com/tangowhisky37/ArduinoProjects/tree/master/Ethernet/EthernetDemoUsingDhcpDnsv0.11)
 - This program uses the Ethernet Addon based on enc28j60 and obtains a DHCP lease over ethernet.
 - I configured my Raspberry Pi as a DHCP server using ISC DHCP and provided the Arduino MEGA 2560 R3 a lease over ethernet. 
 - Connections for this circuit include :
@@ -126,7 +126,7 @@ Obtain DHCP lease with DNS and accept Web Requests (ArduinoProjects/Ethernet/Eth
   - http://en.code-bude.net/2013/06/22/how-to-use-enc28j60-ethernet-shield-with-arduino-mega-2560/ 
 
 
-Obtain data from sensors and display on Web Page (ArduinoProjects/Ethernet/WebPageWithSensorData)
+Obtain data from sensors and display on Web Page (https://github.com/tangowhisky37/ArduinoProjects/tree/master/Ethernet/WebPageWithSensorData)
 - This program uses the Ethernet Addon based on enc28j60, obtains data from on-board sensors and displays values over a web page
 - I configured my Raspberry Pi as a DHCP server using ISC DHCP and provided the Arduino MEGA 2560 R3 a lease over ethernet. 
 - Connections for this circuit include :
@@ -170,7 +170,7 @@ Obtain data from sensors and display on Web Page (ArduinoProjects/Ethernet/WebPa
   - http://en.code-bude.net/2013/06/22/how-to-use-enc28j60-ethernet-shield-with-arduino-mega-2560/
 
 
-Blink lights on the NodeMCU ESP8266 board (Code at  Nodemcu_Geekcreit/BlinkLights/Blink_v0_11/)
+Blink lights on the NodeMCU ESP8266 board (https://github.com/tangowhisky37/ArduinoProjects/tree/master/Nodemcu_Geekcreit/BlinkLights/Blink_v0_11)
 - The NodeMCU board is one among the many ESP8266 boards out there but with a bit of a difference. 
 - This board is affordable, connects to a USB port of your machine, is breadboard friendly and most importantly works with the Arduino IDE.
 - This is the Hello world of embedded electronics. You usually use this when you get started with any new board.
@@ -191,7 +191,7 @@ Blink lights on the NodeMCU ESP8266 board (Code at  Nodemcu_Geekcreit/BlinkLight
  - http://www.nodemcu.com
 
 
-NodeMCU - Identify MAC Addres, Connect to a wireless network and blinks lights(Code at Nodemcu_Geekcreit/ObtainMACAddress/)
+NodeMCU - Identify MAC Addres, Connect to a wireless network and blinks lights(Source code at https://github.com/tangowhisky37/ArduinoProjects/tree/master/Nodemcu_Geekcreit/ObtainMACAddress/Get_MAC_Address_v0.11)
 - The NodeMCU board is one among the many ESP8266 boards out there but with a bit of a difference.
 - This board is affordable, connects to a USB port of your machine, is breadboard friendly and most importantly works with the Arduino IDE.
 - When working with NodeMCU boards one of the initial challenges is configuring your wireless router to allow the NodeMCU board to speak to it.
@@ -218,7 +218,7 @@ NodeMCU - Identify MAC Addres, Connect to a wireless network and blinks lights(C
    - http://www.nodemcu.com
 
 
-IoT (Internet Of Things) Web Server using the NodeMCU ESP8266 board (Code at Nodemcu_Geekcreit/Web_Server/)
+IoT (Internet Of Things) Web Server using the NodeMCU ESP8266 board (https://github.com/tangowhisky37/ArduinoProjects/tree/master/Nodemcu_Geekcreit/Web_Server)
 - The NodeMCU board is one among the many ESP8266 boards out there but with a bit of a difference.
 - This board is affordable, connects to a USB port of your machine, is breadboard friendly and most importantly works with the Arduino IDE.
 - This program is a copy of the Web Server program that comes with the NodeMCU tutorials part of the examples in your Arduino IDE for NodeMCU.
@@ -239,7 +239,7 @@ IoT (Internet Of Things) Web Server using the NodeMCU ESP8266 board (Code at Nod
   - http://www.nodemcu.com
 
 
-IoT (Internet Of Things) Soil Moisture Sensor that Tweets using NodeMCU with ESP8266 (Code at Nodemcu_Geekcreit/ThingSpeakDataUpload)
+IoT (Internet Of Things) Soil Moisture Sensor that Tweets using NodeMCU with ESP8266 (https://github.com/tangowhisky37/ArduinoProjects/tree/master/Nodemcu_Geekcreit/ThingSpeakDataUpload/ThinkgSpeakDataUpload_v017)
 - The NodeMCU board is one among the many ESP8266 boards out there but with a bit of a difference.
 - This board is affordable, connects to a USB port of your machine, is breadboard friendly and most importantly works with the Arduino IDE.
 - As part of this program you will connect to the local wireless network, read values from the Soil moisture sensor and tweet the values.
