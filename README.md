@@ -312,13 +312,14 @@ IoT (Internet Of Things) Soil Moisture Sensor that Tweets & Emails using NodeMCU
 - Currently the code tweets every 15 minutes. You can go in and make changes to suit your setup at home.
 - Connections for this circuit include -
   - Connecting the NodeMCU board to the USB port of your development machine
-  - Relay Input -
+  - Relay Input (https://github.com/tangowhisky37/ArduinoProjects/blob/master/Nodemcu_Geekcreit/ThingSpeakDataUpload/ThinkgSpeakDataUpload_v018/Optoisolated_relay_module_Shunyu_SH05VDC_Input_terminals.jpg) -
     - Vcc to 3v3 (esp8266)
     - Gnd to Gnd (esp8266)
     - Int to D2 (esp8266)
-  - Relay Out -
-    - 3V3 to NC (esp8266) [The input voltage from the esp routes through the relay NC and Comms to go into the sensor]
+  - Relay Out (https://github.com/tangowhisky37/ArduinoProjects/blob/master/Nodemcu_Geekcreit/ThingSpeakDataUpload/ThinkgSpeakDataUpload_v018/Optoisolated_relay_module_Shunyu_SH05VDC_Output_terminals.jpg)-
+    - 3V3 to NO (esp8266) [The input voltage from the esp routes through the relay NC and Comms to go into the sensor]
     - Common (mid) to Soil Moisture Sensor +ve
+    - In reference to the image above, extreme left is NO,Common in the middle, NC on the right 
   - Soil Moisture Sensor -
     - Signal to AD0 [This allows measurement of the soil moisture by the arduino code]
     - Negative to Gnd 
