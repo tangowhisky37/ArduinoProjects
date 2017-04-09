@@ -283,12 +283,15 @@ IoT (Internet Of Things) Soil Moisture Sensor that Tweets using NodeMCU with ESP
     - Dupont Male to Male breadboard wires
     - Dupont Femal to Male breadboard wires
 
-IoT (Internet Of Things) Soil Moisture Sensor that Tweets & Emails using NodeMCU with ESP8266 v2 (https://github.com/tangowhisky37/ArduinoProjects/tree/master/Nodemcu_Geekcreit/ThingSpeakDataUpload/ThinkgSpeakDataUpload_v017)
+IoT (Internet Of Things) Soil Moisture Sensor that Tweets & Emails using NodeMCU with ESP8266 v2 (https://github.com/tangowhisky37/ArduinoProjects/tree/master/Nodemcu_Geekcreit/ThingSpeakDataUpload/ThinkgSpeakDataUpload_v018)
+- Changes compared to v1 are - 
+  - Alerts sent over email (gmail)
+  - Use of a Single Channel Optoisolator Relay (Shunyu SH-05VDC)
 - The NodeMCU board is one among the many ESP8266 boards out there but with a bit of a difference.
 - This board is highly affordable (costs around 8-10 AUD), connects to a USB port of your machine, is breadboard friendly and most importantly works with the Arduino IDE.
-- As part of this program you will connect to the local wireless network, read values from the Soil moisture sensor and tweet the values.
-- This version of the Soil Moisture Sensor program also uses the Thingspeak Arduino library to upload data points to ThingSpeak and view graphically the data being logged. 
-- In addition the modification includes sending email alerts based on an assessment of how low the moisture in the soil is. This is a configurable value and while I've set this to 100 you can change this to any other value that works for your setup at home.
+- As part of this program you will connect to the local wireless network, read values from the Soil moisture sensor, tweet the values and also send yourself alerts over email.
+- This version of the Soil Moisture Sensor program uses the Thingspeak Arduino library to upload data points to ThingSpeak and view graphically the data being logged. 
+- Email alerts are based on an assessment of how low the moisture in the soil is. This is a configurable value and while I've set this to 100 you can change this to any other value that works for your setup at home.
 - To get this program working you will need the credentials for a local wireless network so that you can connect to it.
 - You will need to setup an account at www.thingspeak.com, create a channel and setup it up so that you can write to the channel using your NodeMCU.
 - You will then need to head off and setup a Twitter account at www.twitter.com and configure the thingtweet application.
@@ -299,10 +302,26 @@ IoT (Internet Of Things) Soil Moisture Sensor that Tweets & Emails using NodeMCU
   - You can Allow or Deny the process. Once you have confirmed the right Twitter account, Twitter will send you back to ThingSpeak.
   - The app generates a ThingTweet API Key for you to use. If you send an HTTP POST with your ThingTweet API Key, then the message will be relayed to Twitter. 
   - All of the parameters from the Twitter API (statuses/update) are possible including geolocation.
+- A set of template Gmail SMTP libraries are provided in the same folder as the Arduino code. Download those libraries.
+  - Once you've synced the changes into your local git repo let's start by editing the gsender.h file.
+  - The gsender.h file should be modified to include your email address, your password. 
+  - The email address and password however need to be provided in Base64 format. 
+  - To convert your gmail (email) address and password into Base64 format you might consider using - https://www.base64encode.org/ 
+  - For details on configuring your Gmail account to allow use by external applications please refer to - https://www.instructables.com/id/ESP8266-GMail-Sender/ 
 - Over the coming weeks (or months..as and when i can find time) I will update the code such that it only tweets when certain conditions are met.
-- Currently the code tweets every 5 minutes
+- Currently the code tweets every 15 minutes. You can go in and make changes to suit your setup at home.
 - Connections for this circuit include -
- - Connecting the NodeMCU board to the USB port of your development machine
+  - Connecting the NodeMCU board to the USB port of your development machine
+  - Relay Input -
+    - Vcc to 3v3 (esp8266)
+    - Gnd to Gnd (esp8266)
+    - Int to D2 (esp8266)
+  - Relay Out -
+    - 3V3 to NC (esp8266) [The input voltage from the esp routes through the relay NC and Comms to go into the sensor]
+    - Common (mid) to Soil Moisture Sensor +ve
+  - Soil Moisture Sensor -
+    - Signal to AD0 [This allows measurement of the soil moisture by the arduino code]
+    - Negative to Gnd 
  - Software required includes -
    - Arduino IDE
    - ESP8266 libraries packes into the Arduino IDE which include the packages for NodeMCU board
@@ -313,7 +332,9 @@ IoT (Internet Of Things) Soil Moisture Sensor that Tweets & Emails using NodeMCU
     - Read up on NodeMCU at http://www.nodemcu.com
     - Twitter account
     - Thingspeak account
+    - Gmail account including libraries (template provided)
     - Configuration of Thingtweet application so that it is integrated with your Twitter account and can publish to it
+    - Configuration of gmail privacy settings to allow for use by third party applications
 - Diagram - 
   - View the Fritzing diagram here : https://github.com/tangowhisky37/ArduinoProjects/blob/master/Nodemcu_Geekcreit/ThingSpeakDataUpload/Fritzing/SoilMoistoreSensor_v0.2_bb.png 
   - v0.1 of the Fritzing uses a Wemos Pro instead of a NodeMCU since i couldn't find the right template to use. Please refer to v0.2 
@@ -322,8 +343,9 @@ IoT (Internet Of Things) Soil Moisture Sensor that Tweets & Emails using NodeMCU
   - Links for purchase :
     - NodeMCU - http://www.banggood.com/Geekcreit-Doit-NodeMcu-Lua-ESP8266-ESP-12E-WIFI-Development-Board-p-985891.html
     - Soil Moisture Sensor : https://www.sparkfun.com/products/13322
-    - NPN 2N2222A : https://www.adafruit.com/product/756
-    - 1 x 100 Ohm Resistor
-    - 1 x 1K Ohm Resistor
+    - Single Channel Relay with Optoisolator : https://tronixlabs.com.au/relay/module/relay-module-board-single-channel-with-optoisolator-australia/
     - Dupont Male to Male breadboard wires
-    - Dupont Femal to Male breadboard wires
+    - Dupont Female to Male breadboard wires
+    - Dupont Female to Female breadboard wires
+
+!!!Happy Hacking!!!
