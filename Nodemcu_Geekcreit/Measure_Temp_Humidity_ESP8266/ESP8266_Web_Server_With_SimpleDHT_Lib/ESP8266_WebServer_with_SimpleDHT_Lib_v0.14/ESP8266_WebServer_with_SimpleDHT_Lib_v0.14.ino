@@ -26,7 +26,7 @@ SimpleDHT11 dht11;
 
 // Replace with your network details
 const char *ssid = "PracticalPerformanceAnalyst";
-const char *password = "youreallycantguessthis1";
+const char *password = "xxxxxxxx";
 
 // Web Server on port 80
 WiFiServer server(80);
