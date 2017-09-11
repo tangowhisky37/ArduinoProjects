@@ -17,7 +17,7 @@
 #include <DHT.h>
 #include <DHT_U.h>
 
-#define DHTPIN 14        // Pin which is connected to the DHT sensor.
+#define DHTPIN 14        // Pin which is connected to the DHT sensor on the Blynk board
 
 // Uncomment the type of sensor in use:
 #define DHTTYPE           DHT11     // DHT 11 
